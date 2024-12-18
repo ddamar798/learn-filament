@@ -14,3 +14,8 @@
 comand = php artisan make:model jurusan -m
 
 tambahkan syntax [ $table->string('name'); ] pada file jurusan di migration.
+--------------------------------------------------------------
+comand = php artisan make:model Mahasiswa -maha
+tambahkan syntax [   $table->string('nim');
+            $table->string('name');
+            $table->string('jurusan_id'); ] in mahasiswa migration
