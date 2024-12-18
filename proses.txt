@@ -1,2 +1,16 @@
-    web untuk iput data maha siswa sengan filament
+    web untuk kelola data maha siswa dengan filament
     ==============================================
+
+    JURUSAN
+    - Id
+    - Name
+
+    Mahasiswa
+    - Id
+    - nim
+    - Name
+    - jurusan_id
+    ==============================================
+comand = php artisan make:model jurusan -m
+
+tambahkan syntax [ $table->string('name'); ] pada file jurusan di migration.
