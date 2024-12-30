@@ -12,6 +12,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Forms\Components\TextInput;
 
 class BarangResource extends Resource
 {
@@ -23,7 +24,10 @@ class BarangResource extends Resource
     {
         return $form
             ->schema([
-                //
+                TextInput::make('nama_barang'),
+                TextInput::make('kode_barang'),
+                TextInput::make('harga_barang')
+                // masukan yang ingin di input ke database
             ]);
     }
 
